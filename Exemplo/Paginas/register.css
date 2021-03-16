@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+input {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    height: 30px;
+    padding: 10px;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #001935;
+    font-size: 18px;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 50%;
+    cursor: pointer;
+} 
+
+input:focus {
+    border-color: #4f9fcf;
+}
+span {
+    font-size: 12px;
+}
+  
+body {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #001935;
+}
+
+/*form*/
+.main-container {
+    width: 500px;
+    margin-right:auto; 
+    margin-left: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;    
+}
+
+.main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+form {
+width: 75%;
+}
+
+.full-box, .half-box {
+    margin-bottom:10%;
+}
+
+.full-box .half-box input {
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+ 
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.terms {
+    margin-bottom: 5%;
+}
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+  
+.template {
+    display: none;
+}
+
+.msg-successful span {
+    font-size: 12px;
+    color: #198754;
+}

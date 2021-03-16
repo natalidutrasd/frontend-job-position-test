@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Faça seu login</h1>
+        <div class="icon-user">
+            <img src="../assets/img/avatar.svg" alt="" width="60" height="60" title="avatar">
+        </div>
+        <form id="login">
+            <div class="input-field">
+                <label>Usuário:</label>
+                <input type="text" name="usuario" id="user" placeholder="Digite seu e-mail ">
+            </div>
+            <div class="input-field">
+                <label>Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <div class="register">
+                <span>Ainda não é um usuário ? <a href="#" onclick="RedirectToRegister()">clique aqui</a> para
+                    se cadastrar.</span>
+            </div>
+            <div class="btn">
+                <input id="btn-submit" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="login.js"></script>
+</body>
+
+</html>

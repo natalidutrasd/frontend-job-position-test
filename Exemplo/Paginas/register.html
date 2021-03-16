@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Ainda não é um usuário ? Cadastre-se para
+            acessar o sistema.
+        </h1>
+        <form id="cadastro-form">
+            <div class="form">
+                <div class="full-box">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" data-required
+                        data-min-length="3" data-max-length="12">
+                </div>
+                <div class="half-box">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome"
+                        data-required data-only-letters>
+                </div>
+                <div class="half-box">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="Digite o seu e-mail" data-min-length="6"
+                        data-email-validate>
+                </div>
+                <div class="half-box">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite a sua senha"
+                        data-abce data-required>
+                </div>
+                <div class="half-box">
+                    <label for="passwordconfirmation">Confirmar Senha:</label>
+                    <input type="password" name="password" id="validationpassword" placeholder="Confirme a sua senha"
+                        data-equal="password">
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <span>Eu li e aceito os <a href="#">termos de uso</a></span>
+                </div>
+                <div class="full-box">
+                    <input id="btn-submit" type="submit" value="Registrar">
+                </div>
+                <div class="msg-successful " id="successful" style="display: none;">
+                    <span>✓ Cadastro efetuado com sucesso.</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="register.js"></script>
+</body>
+
+</html>

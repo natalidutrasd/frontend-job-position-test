@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div id="home-page">
+        <div class="header">
+            <div class="nav">
+                <label>Seja bem vindo, <span id="username" style="color: white;"></span> !</label>
+                <ul>
+                    <li><a href="#" onclick="Logout()">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="main-container">
+                <div class="title">
+                    <h1>CRUD</h1>
+                </div>
+                <div class="box">
+                    <form action="javascript:void(0)" method="POST" class="form" onsubmit="Add()">
+                        <label>Nome:</label>
+                        <input type="text" id="name">
+                        <button type="submit" class="btn" id="add"><span class=""></span> Adicionar</button>
+                    </form>
+                    <br />
+                    <div id="edit" style="display: none;">
+                        <form action="javascript:void(0)" method="POST" class="form" id="update">
+                            <label>Nome:</label>
+                            <input type="text" id="edit-name" />
+                            <button type="submit" class="btn" id="btn-warning">Atualizar</button>
+                            <button type="submit" class="btn" id="btn-close" onclick="Close()">Fechar</button>
+                        </form>
+                    </div>
+                    <br />
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="name_list">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<footer>
+    <div class="copyright">
+        <span>Todos os seus direitos reservados 2021.</span>
+    </div>
+</footer>
+<script src="home.js"></script>
+
+</html>

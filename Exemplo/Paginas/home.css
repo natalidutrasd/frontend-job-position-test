@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+    text-decoration: none;
+	list-style: none;
+}
+
+input {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    height: 30px;
+    padding: 10px;
+}
+
+input, label {
+    outline: none;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+/* Barra de Navegação*/
+.nav { 
+    background-color: #001935;
+    padding: 20px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.nav label {
+    display: inline;
+    color: #fff;
+    font-size: 20px;
+    padding-right: 80%;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Section */
+.main-container {
+    margin: 5%;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.box {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 700px;
+    display: inline-block;
+}
+
+form {
+    margin: 10px;
+}
+
+form input {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #4f9fcf;
+}
+
+button[type="submit"] {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    font-size: 16px;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 15%;
+    cursor: pointer;
+    outline: none;
+} 
+
+#btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    font-size: 14px;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+#btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545; 
+    font-size: 14px;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+#btn-close {
+    background-color: #dc3545;
+    border-color: #dc3545; 
+    font-size: 14px;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Table*/
+
+table {
+    margin: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    width: 500px;
+}
+
+.table  {
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 15%;
+}
+
+
+#update {
+    text-align: left;
+}
+
+/* Footer*/
+.copyright{
+    background-color: #001935;
+    padding: 20px;
+    text-align: center;
+}
+
+.copyright span {
+    color: #fff;
+    font-size: 12px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+
+
